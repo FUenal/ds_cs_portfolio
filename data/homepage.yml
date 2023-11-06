@@ -166,12 +166,12 @@ testimonial:
     - name : "Prof. Peter Newell"
       image : "images/testimonial/Peter.jpg"
       designation : "Professor of International Relations, University of Sussex"
-      content : "<p class='lead text-white'><em>Because of all the Data Science and AI skills Fatih has provided, we have brought our data to life and can share it with people all around the world. Setting up shiny dashboards on Digital Ocean was extremely helpful providing access to our database.</em></p>"
+      content : "<p class='lead text-white'><em>Because of all the data science and AI skills Fatih has provided, we have brought our database to life and can share it with people all around the world. Setting up shiny dashboards on Digital Ocean was extremely helpful providing access to our database.</em></p>"
         
     - name : "Prof. Sander van der Linden"
       image : "images/testimonial/sander.jpg"
       designation : "Professor of Social Psychology, University of Cambridge"
-      content : "<p class='lead text-white'><em>Thanks to Fatih's skills in machine learning, we were able to analyze our big data sets and gain valuable insights into peoples Energy preferences.</em></p>"
+      content : "<p class='lead text-white'><em>Thanks to Fatih's skills in machine learning, we were able to analyze our big data sets and gain valuable insights into Europeans' energy preferences.</em></p>"
       
 # client logo slider
 clients_logo_slider:
