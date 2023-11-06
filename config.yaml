@@ -1,0 +1,61 @@
+baseURL: /
+languageCode: en-us
+summaryLength: '10'
+theme: kross-hugo-data-science
+title: Fatih Uenal, PhD
+params:
+  address: Campus Biotech, Chemin des Mines 9, 1202 Genève
+  author: Fatih Uenal
+  baidu_analytics_id: ''
+  baidu_site_verification: ''
+  contact:
+    enable: yes
+    form_action: '#'
+  cookies:
+    enable: no
+    expire_days: 2
+  copyright: Copyright &copy; 2023 Fatih Uenal
+  description: An example data science portfolio with kross theme.
+  email: mars.fatih@gmail.com
+  google_analytics_id: ''
+  home: Home
+  logo: ''
+  map:
+    enable: no
+    gmap_api: https://maps.app.goo.gl/tP45p6MNHkSUChgK8
+    map_latitude: '46.22224837464531'
+    map_longitude: '6.148116396305371'
+    map_marker: images/marker.png
+  phone: --
+  plugins:
+    css:
+      - link: plugins/bootstrap/bootstrap.min.css
+      - link: plugins/slick/slick.css
+      - link: plugins/themify-icons/themify-icons.css
+    js:
+      - link: plugins/jQuery/jquery.min.js
+      - link: plugins/bootstrap/bootstrap.min.js
+      - link: plugins/slick/slick.min.js
+      - link: plugins/shuffle/shuffle.min.js
+      - link: plugins/google-map/map.js
+  preloader:
+    enable: yes
+    preloader: images/preloader.gif
+  social:
+    - URL: 'https://www.linkedin.com/in/fatih-uenal/'
+      icon: ti-linkedin
+    - URL: 'https://github.com/FUenal'
+      icon: ti-github
+    - URL: 'https://www.youtube.com/@thedataist/featured'
+      icon: ti-youtube
+    - URL: 'https://twitter.com/DrUenal'
+      icon: ti-twitter-alt
+  theme_color: '#003049'
+menu:
+  main:
+    - URL: portfolio
+      name: Portfolio
+      weight: 3
+    - URL: contact
+      name: Contact
+      weight: 4

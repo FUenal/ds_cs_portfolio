@@ -1,0 +1,226 @@
+# banner
+banner:
+  title: "Hello! <br> I’m Fatih <br> <small>Data Scientist & Cyber Security Analyst</small>"
+  button:
+    enable: true
+    label: "Contact Fatih"
+    icon: 'ti-email'
+    URL: "mailto:mars.fatih@gmail.com"
+  
+# contact 
+contact:
+  enable: true
+  title: 'Contact Fatih'
+  contact_image: "images/about/user-picture-3.jpg"
+  email:
+    title: "Email"
+    email: "mars.fatih@gmail.com"
+  button:
+    label: "Contact Fatih"
+    icon: 'ti-email'
+    URL: "mailto:mars.fatihl@gmail.com"
+
+# about
+about:
+  enable : true
+  content : 
+    <p class="lead">
+    <strong> I love using Data Science and AI to solve complex problems.</strong> My passion is Cyber Security and I am gradually transitioning from data science into the exciting field of Cyber Security Analysis. Currently, I am preparing to take the CompTIA Cyber Security + Exam. <br><br> When I am not data sciencing
+    or hunting cyber threats, I enjoy hiking, yoga, and sci-fi. 
+    </p>
+    <p class="lead">
+    <strong>My area of focus</strong> is applying data science to cyber security issues like malware detection and network analysis. 
+    I create value for companies by protecting valuable assets, reducing financial
+    cost of security problems, and delivering a return-on-investment with my solutions. 
+    I enjoy learning, working with stakeholders, and making better decisions with data.
+    </p>
+  author_image: "images/about/user-picture-3-copy.jpg"
+  button:
+    enable : true
+    label : "know more"
+    URL : "about"
+
+# portfolio
+portfolio:
+  enable : true
+  title : "Data Science Portfolio"
+  item_show : 4
+  item_width_lg: 5.5
+  # portfolio item comes from 'data/portfolio.yml' item.
+
+
+
+# experience
+experience:
+  enable : true
+  title : "Experience"
+  description: "<p class='lead'>Over 3+ years of experience working with Universities, NGOs, and companies from all over the world. I design & develop data science products to help increase efficiency and improve customer experience.</p>"
+  button:
+    icon: "ti-linkedin"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/fatih-uenal/"
+  button2:
+    icon: "ti-file"
+    btnText: "Download My Resume"
+    URL: "/cv/resume_FUenal.pdf"
+  
+  item: 
+    - logo : "images/experience/icon-1.png"
+      title : "Data Scientist"
+      company : "Fossil Fuel Non-Proliferation Treaty Initiative"
+      duration : "Feb 2021 - Present"
+      
+    - logo : "images/experience/icon-2.png"
+      title : "Data Scientist"
+      company : "Unieversity of Geneva"
+      duration : "Oct 2021 - Present"
+      
+    - logo : "images/experience/icon-1.png"
+      title : "Data Scientist"
+      company : "University of Cambridge"
+      duration : "Aug 2020 - Dec 2020"
+
+# education
+education:
+  enable : true
+  title : "Education"
+  item:
+    - title : "Google Cyber Security Professional"
+      year : "2023"
+      academy : "Google"
+      
+    - title : "CompTIA Security+ Certification"
+      year : "2023"
+      academy : "CompTIA Academy"
+      
+    - title : "Harvard Data Science Professional"
+      year : "2021"
+      academy : "Harvard University"
+      
+    - title : "Harvard Data Science: Machine Learning"
+      year : "2020"
+      academy : "Harvard University" 
+      
+    - title : "Data Science Fellowship"
+      year : "2021"
+      academy : "Faculty AI"
+      
+    - title : "Ph.D. in Quantitative Social Sciences"
+      year : "2014-2017"
+      academy : "Humboldt University of Berlin"
+
+      
+# skill
+skill:
+  enable : true
+  title : "Skills"
+  item:
+    - title : "R"
+      progress : "90%"
+      color : "#fdb157"
+      
+    - title : "Python"
+      progress : "80%"
+      color : "#9473e6"
+      
+    - title : "SQL"
+      progress : "90%"
+      color : "#18bc9c"
+      
+    - title : "Wireshark"
+      progress : "70%"
+      color : "#ffbcaa"
+
+# service
+service:
+  enable : false
+  title : "Services"
+  item:
+    - title : "UI Design"
+      icon : "ti-palette"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      highlighted : false
+
+    - title : "UX Design"
+      icon : "ti-vector"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      highlighted : true
+
+    - title : "Interaction Design"
+      icon : "ti-panel"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      highlighted : false
+
+
+
+# testimonial
+testimonial:
+  enable : true
+  title : "References"
+  item:
+    - name : "Maria Diaz, PhD"
+      image : "images/testimonial/maria.jpg"
+      designation : "Head of Fellowship @ Faculty | AI"
+      content : "<p class='lead text-white'><em>In less than 2 months after starting his Faculty AI Data Science Fellowship, Fatih had transitioned into a role as a data scientist with the Fossil Fuel Non-Proliferation Treaty Initiative!</em></p>"
+      
+    - name : "Prof. Peter Newell"
+      image : "images/testimonial/Peter.jpg"
+      designation : "Professor of International Relations, University of Sussex"
+      content : "<p class='lead text-white'><em>Because of all the Data Science and AI skills Fatih has provided, we have brought our data to life and can share it with people all around the world. Setting up shiny dashboards on Digital Ocean was extremely helpful providing access to our database.</em></p>"
+        
+    - name : "Prof. Sander van der Linden"
+      image : "images/testimonial/sander.jpg"
+      designation : "Professor of Social Psychology, University of Cambridge"
+      content : "<p class='lead text-white'><em>Thanks to Fatih's skills in machine learning, we were able to analyze our big data sets and gain valuable insights into peoples Energy preferences.</em></p>"
+      
+# client logo slider
+clients_logo_slider:
+  enable : true
+  item:
+    - logo : "images/clients-logo/cambridge.png"
+      URL : "https://www.sdmlab.psychol.cam.ac.uk/staff/dr-fatih-uenal"
+      
+    - logo : "images/clients-logo/Harvard_University_logo.svg"
+      URL : "https://scholar.harvard.edu/fatih-uenal/data-science-course-r"
+      
+    - logo : "images/clients-logo/faculty_logo.svg"
+      URL : "https://faculty.ai/"
+      
+    - logo : "images/clients-logo/Primary_fullcolour_for+light+bgFFT.png"
+      URL : "https://fossilfueltreaty.org/notre-equipe"
+      
+    - logo : "images/clients-logo/2560px-Uni_GE_logo.svg.png"
+      URL : "https://www.unige.ch/cisa/center/members/uenal-fatih/"
+      
+    - logo : "images/clients-logo/stand@2x.png"
+      URL : "https://stand.earth/"
+      
+    - logo : "images/clients-logo/pngegg.png"
+      URL : "https://www.sussex.ac.uk/"
+      
+    - logo : "images/clients-logo/cambridge.png"
+      URL : "https://www.sdmlab.psychol.cam.ac.uk/staff/dr-fatih-uenal/"
+      
+    - logo : "images/clients-logo/Harvard_University_logo.svg"
+      URL : "https://scholar.harvard.edu/fatih-uenal/data-science-course-r"
+      
+    - logo : "images/clients-logo/faculty_logo.svg"
+      URL : "https://faculty.ai/"
+      
+    - logo : "images/clients-logo/Primary_fullcolour_for+light+bgFFT.png"
+      URL : "https://fossilfueltreaty.org/notre-equipe"
+      
+    - logo : "images/clients-logo/2560px-Uni_GE_logo.svg.png"
+      URL : "https://www.unige.ch/cisa/center/members/uenal-fatih/"
+      
+    - logo : "images/clients-logo/stand@2x.png"
+      URL : "https://stand.earth/"
+      
+    - logo : "images/clients-logo/pngegg.png"
+      URL : "https://www.sussex.ac.uk/"
+
+# blog
+blog:
+  enable : false
+  title : "Blogs"
+  # blog post comes from "content/blog" folder

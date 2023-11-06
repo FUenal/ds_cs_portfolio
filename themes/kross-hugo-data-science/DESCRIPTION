@@ -1,0 +1,14 @@
+Package: kross_hugo_data_science
+Title: The Kross Hugo Theme (Data Science Version)
+Version: 0.0.1.9000
+Authors@R: 
+    c(
+    person("Matt", "Dancho", email = "mdancho@business-science.io", role = c("aut", "cre"))
+  )
+Description: 
+  Used with portfoliodown to install the "kross" Data Science Website Theme.
+  A modified version of the Kross Hugo Theme <https://github.com/themefisher/kross-hugo>.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
