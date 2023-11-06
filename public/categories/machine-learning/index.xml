@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on Fatih Uenal, PhD</title>
+    <link>/categories/machine-learning/</link>
+    <description>Recent content in machine learning on Fatih Uenal, PhD</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Nov 2023 12:14:34 +0600</lastBuildDate>
+    
+	<atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>NLP pipeline for text-classification</title>
+      <link>/portfolio/project-3/</link>
+      <pubDate>Thu, 02 Nov 2023 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-3/</guid>
+      <description>Project Details This application is based on an Artificial Neural Network model to classify policy texts using data from various sources such as news-articles and official government databases.</description>
+    </item>
+    
+    <item>
+      <title>Using AI and Data Science in climate policy research</title>
+      <link>/portfolio/project-4/</link>
+      <pubDate>Thu, 02 Nov 2023 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-4/</guid>
+      <description>Project Details At the University of Oxford, I present how we use AI and Data Science to accelerate and improve the policy research and advocacy work at the Fossil Fuel Non-Proliferation Treaty Initiative.</description>
+    </item>
+    
+    <item>
+      <title>XGBoost prediction on European energy preferences</title>
+      <link>/portfolio/project-2/</link>
+      <pubDate>Thu, 02 Nov 2023 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-2/</guid>
+      <description>Project Details In this full-stack data science project for the University of Geneva, I used XGBoost in python to distill the most important features in predicting fossil fuel taxtation preferences.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Fatih Uenal, PhD</title>
+    <link>/categories/</link>
+    <description>Recent content in Categories on Fatih Uenal, PhD</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Nov 2023 12:14:34 +0600</lastBuildDate>
+    
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>artificial neural network</title>
+      <link>/categories/artificial-neural-network/</link>
+      <pubDate>Thu, 02 Nov 2023 12:14:34 +0600</pubDate>
+      
+      <guid>/categories/artificial-neural-network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>machine learning</title>
+      <link>/categories/machine-learning/</link>
+      <pubDate>Thu, 02 Nov 2023 12:14:34 +0600</pubDate>
+      
+      <guid>/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dashboards</title>
+      <link>/categories/dashboards/</link>
+      <pubDate>Thu, 12 May 2022 12:14:34 +0600</pubDate>
+      
+      <guid>/categories/dashboards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>database</title>
+      <link>/categories/database/</link>
+      <pubDate>Thu, 12 May 2022 12:14:34 +0600</pubDate>
+      
+      <guid>/categories/database/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web apps</title>
+      <link>/categories/web-apps/</link>
+      <pubDate>Thu, 12 May 2022 12:14:34 +0600</pubDate>
+      
+      <guid>/categories/web-apps/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
