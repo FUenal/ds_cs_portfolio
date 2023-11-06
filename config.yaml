@@ -2,7 +2,7 @@ baseURL: /
 languageCode: en-us
 summaryLength: '10'
 theme: kross-hugo-data-science
-title: Fatih Uenal, PhD
+title: Fatih Uenal
 params:
   address: Campus Biotech, Chemin des Mines 9, 1202 Genève
   author: Fatih Uenal
