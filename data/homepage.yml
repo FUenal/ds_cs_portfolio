@@ -1,6 +1,6 @@
 # banner
 banner:
-  title: "Hello! <br> I’m Fatih <br> <small>Data Scientist & Cyber Security Analyst</small>"
+  title: "Hello! <br> I’m Fatih <br> <small>Data Scientist & <br> Cyber Security Analyst</small>"
   button:
     enable: true
     label: "Contact Fatih"
