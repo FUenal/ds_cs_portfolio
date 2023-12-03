@@ -65,6 +65,11 @@ experience:
     URL: "/cv/resume_FUenal.pdf"
   
   item: 
+    - logo : "images/experience/icon-2.png"
+      title : "Cybersecurity Support Analyst"
+      company : "Log(N) Pacific"
+      duration : "Oct 2023 - Present"
+      
     - logo : "images/experience/icon-1.png"
       title : "Data Scientist"
       company : "Fossil Fuel Non-Proliferation Treaty Initiative"
@@ -73,12 +78,12 @@ experience:
     - logo : "images/experience/icon-2.png"
       title : "Behavioral Data Scientist"
       company : "Unieversity of Geneva"
-      duration : "Oct 2021 - Present"
+      duration : "Oct 2021 - Jan 2024"
       
     - logo : "images/experience/icon-1.png"
       title : "Data Scientist"
       company : "University of Cambridge"
-      duration : "Aug 2020 - Dec 2020"
+      duration : "Sep 2019 - Sep 2021"
 
 # education
 education:
@@ -115,7 +120,19 @@ skill:
   enable : true
   title : "Skills"
   item:
-    - title : "R"
+    - title : "Microsoft Azure"
+      progress : "90%"
+      color : "#fdb157"
+      
+    - title : "Azure Sentinel"
+      progress : "80%"
+      color : "#9473e6"
+      
+    - title : "KQL"
+      progress : "70%"
+      color : "#ffbcaa"
+      
+    - title : "Wireshark"
       progress : "90%"
       color : "#fdb157"
       
@@ -123,13 +140,17 @@ skill:
       progress : "80%"
       color : "#9473e6"
       
-    - title : "SQL"
+    - title : "R"
       progress : "90%"
       color : "#18bc9c"
       
-    - title : "Wireshark"
-      progress : "70%"
+    - title : "SQL"
+      progress : "90%"
       color : "#ffbcaa"
+      
+    - title : "Docker"
+      progress : "60%"
+      color : "#18bc9c"
 
 # service
 service:
