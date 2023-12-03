@@ -42,7 +42,7 @@ params:
     enable: yes
     preloader: images/preloader.gif
   social:
-    - URL: 'https://www.linkedin.com/in/fatih-uenal/'
+    - URL: 'www.linkedin.com/in/fuenal'
       icon: ti-linkedin
     - URL: 'https://github.com/FUenal'
       icon: ti-github
