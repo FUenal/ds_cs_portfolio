@@ -5,7 +5,7 @@ date: "2022-05-12T12:14:34+06:00"
 description: Fossil fuel non-proliferation policy tracker application.
 draft: false
 github_url: '[Open Github](https://github.com/FUenal/FFNPT_Tracker)'
-image: images/portfolio/tracker.png
+image: images/portfolio/tracker1.png
 project_url: '[View Dashboard](https://fossilfueltracker.org)'
 title: Global fossil fuel policy tracker application
 ---

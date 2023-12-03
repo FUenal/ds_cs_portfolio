@@ -5,9 +5,9 @@ date: "2023-11-02T12:14:34+06:00"
 description: Juyper Notebook.
 draft: false
 github_url: '[Open Github](https://github.com/FUenal/fossil_fuel_policy_nlp)'
-image: images/portfolio/NLP_Pipeline.jpg
+image: images/portfolio/NLP_Pipeline.png
 project_url: '[View Application Code](https://github.com/FUenal/fossil_fuel_policy_nlp)'
-title: NLP pipeline for text-classification 
+title: NLP pipeline for text-classification
 ---
 
 

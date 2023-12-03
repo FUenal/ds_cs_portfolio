@@ -44,8 +44,8 @@ about:
 portfolio:
   enable : true
   title : "Portfolio"
-  item_show : 8
-  item_width_lg: 5.5
+  item_show : 6
+  item_width_lg: 1.5
   # portfolio item comes from 'data/portfolio.yml' item.
 
 
