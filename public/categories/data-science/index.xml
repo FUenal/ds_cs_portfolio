@@ -1,42 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Portfolio on Fatih Uenal</title>
-    <link>/portfolio/</link>
-    <description>Recent content in Portfolio on Fatih Uenal</description>
+    <title>data science on Fatih Uenal</title>
+    <link>/categories/data-science/</link>
+    <description>Recent content in data science on Fatih Uenal</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2023 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 02 Nov 2023 12:14:34 +0600</lastBuildDate>
     
-	<atom:link href="/portfolio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/data-science/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Azure Honeynet - Simulating Real-World Cyber Attacks</title>
-      <link>/portfolio/project-5/</link>
-      <pubDate>Fri, 01 Dec 2023 12:14:34 +0600</pubDate>
-      
-      <guid>/portfolio/project-5/</guid>
-      <description>Project Details The primary goal of this project involved establishing intentionally vulnerable virtual machines within the Azure infrastructure, as detailed here.</description>
-    </item>
-    
-    <item>
-      <title>Configuring and Implementing a Honeypot in Azure</title>
-      <link>/portfolio/project-6/</link>
-      <pubDate>Fri, 01 Dec 2023 12:14:34 +0600</pubDate>
-      
-      <guid>/portfolio/project-6/</guid>
-      <description>Project Details To initiate the commencement of my Azure Honeynet project, the initial step involves configuring the virtual machines (VMs) that will be utilized.</description>
-    </item>
-    
-    <item>
-      <title>Security Incident Analysis Using SQL</title>
-      <link>/portfolio/project-7/</link>
-      <pubDate>Fri, 01 Dec 2023 12:14:34 +0600</pubDate>
-      
-      <guid>/portfolio/project-7/</guid>
-      <description>Project Details The objective of these situations is to evaluate my competency in utilizing SQL for data analysis and addressing problems.</description>
-    </item>
     
     <item>
       <title>NLP pipeline for text-classification</title>

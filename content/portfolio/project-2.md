@@ -1,6 +1,6 @@
 ---
 categories:
-- machine learning
+- data science
 date: "2023-11-02T12:14:34+06:00"
 description: Juyper Notebook.
 draft: false

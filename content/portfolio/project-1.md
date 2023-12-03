@@ -1,8 +1,6 @@
 ---
 categories:
-- web apps
-- dashboards
-- database
+- data science
 date: "2022-05-12T12:14:34+06:00"
 description: Fossil fuel non-proliferation policy tracker application.
 draft: false
