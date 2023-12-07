@@ -71,14 +71,14 @@ experience:
       duration : "Oct 2023 - Present"
       
     - logo : "images/experience/icon-1.png"
-      title : "Data Scientist"
-      company : "Fossil Fuel Non-Proliferation Treaty Initiative"
-      duration : "Feb 2021 - Present"
+      title : "Behavioral Data Scientist"
+      company : "University of Geneva"
+      duration : "Oct 2021 - Present"
       
     - logo : "images/experience/icon-2.png"
-      title : "Behavioral Data Scientist"
-      company : "Unieversity of Geneva"
-      duration : "Oct 2021 - Jan 2024"
+      title : "Data Scientist"
+      company : "Fossil Fuel Non-Proliferation Treaty Initiative"
+      duration : "Feb 2021 - Oct 2023"
       
     - logo : "images/experience/icon-1.png"
       title : "Data Scientist"
