@@ -38,5 +38,14 @@
       <description>Project Details The objective of these situations is to evaluate my competency in utilizing SQL for data analysis and addressing problems.</description>
     </item>
     
+    <item>
+      <title>Vulnerability Management with OpenVAS</title>
+      <link>/portfolio/project-8/</link>
+      <pubDate>Fri, 01 Dec 2023 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-8/</guid>
+      <description>Project Details In this project, a secure Azure network was created and populated with two virtual machines, set to run OpenVAS Vulnerability Management Scanner and Windows 10.</description>
+    </item>
+    
   </channel>
 </rss>
