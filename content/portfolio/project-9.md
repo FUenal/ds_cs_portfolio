@@ -7,7 +7,7 @@ description: Juyper Notebook.
 draft: false
 github_url: '[Open Github](https://github.com/FUenal/deep-learning-cybersecurity-ids/tree/main)'
 image: images/portfolio/fastai_vs_xgboost.png
-project_url: '[View Jupyter Notebook](https://colab.research.google.com/drive/1fHdv-q-jNwi8oZONkjoMpz1TwQ_rxfeI#scrollTo=n4oTDmOm71Rs)'
+project_url: '[View Jupyter Notebook](https://colab.research.google.com/drive/1WF-cAHsbrZzvpLabhDhQLEj3wB6PmERq?usp=sharing)'
 title: Deep learning vs. XGBoost on network traffic data
 ---
 
