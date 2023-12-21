@@ -1,11 +1,11 @@
 # banner
 banner:
-  title: "Hello! <br> I’m Fatih <br> <small>Data Scientist & <br> Cyber Security Analyst</small>"
+  title: "Hello! I’m Fatih <br> <small><small><small>Data Scientist & Cybersecurity Analyst</small></small></small>"
   button:
     enable: true
     label: "Contact Fatih"
     icon: 'ti-email'
-    URL: "mailto:mars.fatih@gmail.com"
+    URL: "mailto:uenal.fatih@proton.me"
   
 # contact 
 contact:
@@ -14,19 +14,19 @@ contact:
   contact_image: "images/about/user-picture-3.jpg"
   email:
     title: "Email"
-    email: "mars.fatih@gmail.com"
+    email: "uenal.fatih@proton.me"
   button:
     label: "Contact Fatih"
     icon: 'ti-email'
-    URL: "mailto:mars.fatihl@gmail.com"
+    URL: "mailto:uenal.fatih@proton.me"
 
 # about
 about:
   enable : true
   content : 
     <p class="lead">
-    <strong> I love using Data Science and AI to solve complex problems.</strong> My passion is Cyber Security and I am gradually transitioning from data science into the exciting field of Cyber Security Analysis. <br><br> 
-    When I am not data sciencing or hunting cyber threats, I enjoy hiking, yoga, and sci-fi. 
+    <strong> I love using Data Science and AI to solve complex business problems.</strong> My passion is Cyber Security and I am bringing the best of deep learning and machine learning into the exciting field of Cyber Security Analysis.  
+    When I am not data sciencing or hunting cyber threats with alogorithms, I enjoy hiking, yoga, and sci-fi. 
     </p>
     <p class="lead">
     <strong>My area of focus</strong> is applying data science to cyber security issues like malware detection and network analysis. 
@@ -44,7 +44,7 @@ about:
 portfolio:
   enable : true
   title : "Portfolio"
-  item_show : 6
+  item_show : 10
   item_width_lg: 1.5
   # portfolio item comes from 'data/portfolio.yml' item.
 

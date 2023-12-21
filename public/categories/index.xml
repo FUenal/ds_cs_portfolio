@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Fatih Uenal</title>
+    <title>Categories on Cybersec Data Science</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Fatih Uenal</description>
+    <description>Recent content in Categories on Cybersec Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2023 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 21 Dec 2023 12:14:34 +0600</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>cybersecurity</title>
       <link>/categories/cybersecurity/</link>
-      <pubDate>Fri, 01 Dec 2023 12:14:34 +0600</pubDate>
+      <pubDate>Thu, 21 Dec 2023 12:14:34 +0600</pubDate>
       
       <guid>/categories/cybersecurity/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>data science</title>
       <link>/categories/data-science/</link>
-      <pubDate>Thu, 02 Nov 2023 12:14:34 +0600</pubDate>
+      <pubDate>Thu, 21 Dec 2023 12:14:34 +0600</pubDate>
       
       <guid>/categories/data-science/</guid>
       <description></description>

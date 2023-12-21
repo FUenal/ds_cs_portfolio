@@ -3,32 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2023-12-21T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2023-12-21T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/cybersecurity/</loc>
+    <lastmod>2023-12-21T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/data-science/</loc>
+    <lastmod>2023-12-21T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/project-9/</loc>
+    <lastmod>2023-12-21T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/portfolio/</loc>
+    <lastmod>2023-12-21T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/portfolio/project-5/</loc>
     <lastmod>2023-12-01T12:14:34+06:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2023-12-01T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/portfolio/project-6/</loc>
-    <lastmod>2023-12-01T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/cybersecurity/</loc>
-    <lastmod>2023-12-01T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2023-12-01T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/portfolio/</loc>
     <lastmod>2023-12-01T12:14:34+06:00</lastmod>
   </url>
   
@@ -40,11 +50,6 @@
   <url>
     <loc>/portfolio/project-8/</loc>
     <lastmod>2023-12-01T12:14:34+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/data-science/</loc>
-    <lastmod>2023-11-02T12:14:34+06:00</lastmod>
   </url>
   
   <url>

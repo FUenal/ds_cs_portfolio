@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <meta charset="utf-8">
+  <title>Deep learning vs. XGBoost on network traffic data</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Juyper Notebook.">
+  <meta name="author" content="Fatih Uenal">
+  <meta name="generator" content="Hugo 0.72.0" />
+
+  
+
+  <style>
+    :root{
+      --primary-color:#003049;
+    }
+  </style>
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="/plugins/bootstrap/bootstrap.min.css ">
+  
+  <link rel="stylesheet" href="/plugins/slick/slick.css ">
+  
+  <link rel="stylesheet" href="/plugins/themify-icons/themify-icons.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" media="screen">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/images/favicon.png " type="image/x-icon">
+
+  
+
+  
+
+</head><body>
+<!-- preloader start -->
+<div class="preloader">
+  
+  <img src="/images/preloader.gif " alt="preloader">
+  
+</div>
+<!-- preloader end -->
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">
+      
+      <h3 class="text-white font-secondary">Cybersec Data Science</h3>
+      
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/"> Home </a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/portfolio">Portfolio</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="nav-item ">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<section class="page-title bg-primary position-relative overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="text-white font-secondary">Deep learning vs. XGBoost on network traffic data</h1>
+      </div>
+    </div>
+  </div>
+  
+  <img src="/images/illustrations/page-title.png" alt="illustrations" class="bg-shape-1 w-100">
+  <img src="/images/illustrations/leaf-pink-round.svg" alt="illustrations" class="bg-shape-2">
+  <img src="/images/illustrations/dots-cyan.svg" alt="illustrations" class="bg-shape-3">
+  <img src="/images/illustrations/leaf-orange.svg" alt="illustrations" class="bg-shape-4">
+  <img src="/images/illustrations/leaf-yellow.svg" alt="illustrations" class="bg-shape-5">
+  <img src="/images/illustrations/dots-group-cyan.svg" alt="illustrations" class="bg-shape-6">
+  <img src="/images/illustrations/leaf-cyan-lg.svg" alt="illustrations" class="bg-shape-7">
+</section>
+
+
+
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 mb-5">
+        <img src="/images/portfolio/fastai_vs_xgboost.png" class="img-fluid w-100" alt="Deep learning vs. XGBoost on network traffic data">
+      </div>
+      <div class="col-lg-7 mb-5 mb-lg-0 align-self-center">
+        <div class="row mx-0">
+          <div class="col-sm-6 mb-5">
+            <div class="project-meta">
+              <i class="ti-calendar"></i>
+              <div class="ml-3">
+                <h4>Date</h4>
+                <p>Dec 21, 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 mb-5">
+            <div class="project-meta">
+              <i class="ti-folder"></i>
+              <div class="ml-3">
+                <h4>Categories</h4>
+                <p>Cybersecurity, data science</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6 mb-5">
+            <div class="project-meta">
+              <i class="ti-link"></i>
+              <div class="ml-3">
+                <h4>Project Link</h4>
+                <p><a href="https://colab.research.google.com/drive/1fHdv-q-jNwi8oZONkjoMpz1TwQ_rxfeI#scrollTo=n4oTDmOm71Rs">View Jupyter Notebook</a></p>
+              </div>
+            </div>
+          </div>
+          
+          
+          <div class="col-sm-6 mb-5">
+            <div class="project-meta">
+              <i class="ti-link"></i>
+              <div class="ml-3">
+                <h4>GitHub Link</h4>
+                <p><a href="https://github.com/FUenal/deep-learning-cybersecurity-ids/tree/main">Open Github</a></p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-lg-11">
+        <div class="content"><h3 id="project-details">Project Details</h3>
+<p>I use the <a href="https://www.fast.ai/">fast.ai</a> deep learning framework for one of its newest applications: classification on tabular data. I compare its performance against the incumbent best tool in the field, gradient boosting with <a href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a>, as well as against various scikit-learn classifiers in detecting network intrusion traffic and classifying common network attack types (e.g., FTP-BruteForce, DOS-GoldenEye, BruteForce-XSS, SQL-Injection, Infiltration, BotAttack). In line with recent prominence on other tabular datasets, fast.ai is on par with XGBoost and sklearn’s Random Forest Classifier, demonstrating high accuracy (99%), with low false positive and negative rates in the classification of various intrusion types. <em>Pretty powerful!</em></p>
+<h3 id="background">Background</h3>
+<p>Recent advancements in deep learning algorithms have facilitated significant strides in addressing challenging computer science problems and applications in nearly all areas of life. These breakthroughs have extended to areas such as computer vision, natural language processing, complex reasoning tasks like playing board games (e.g., Go, Chess), and even surpassing human champions.</p>
+<p>In light of the ongoing surge in cyber-attacks and the increased demand for AI usage in the context of cybersecurity <a href="https://wp.technologyreview.com/wp-content/uploads/2022/07/Deep-Learning-Delivers-proactive-Cyber-defense-FNL.pdf">MIT Report</a>, in this project, I investigate the effectiveness and capacity of a powerful new deep learning algorithm, fast ai, in the domain of network intrusion detection and compare its performance against the incumbent best tool in the field, gradient boosting with XGBoost, as well as against various scikit-learn classifiers (random forest, knn, naïve bayes, etc.).</p>
+<p>In a previous study, <a href="https://isyou.info/jisis/vol9/no4/jisis-2019-vol9-no4-01.pdf">Basnet and colleagues (2018)</a> have shown that the fastai deep learning algorithm provided the highest accuracy of about 99% compared to other well-known deep learning frameworks (e.g., Keras, TensorFlow, Theano) in detecting network intrusion traffic and classifying common network attack types using the <a href="https://www.unb.ca/cic/datasets/ids-2018.html">CSE-CIC-IDS2018 dataset</a> (same dataset as I used here).</p>
+<p>Deep learning is the gold standard for large, unstructured datasets, including text, images, and video and has been battle tested in areas such as computer vision, natural language processing, and complex reasoning tasks. However, for one specific type of dataset –one of the most common datasets used in cybersecurity– deep learning typically falls behind other, more “shallow-learning” approaches such as decision tree algorithms (random forests, gradient boosted decision trees): TABULAR DATA.</p>
+<p>Indeed, in a <a href="https://arxiv.org/abs/2207.08815">systematic review and meta-analysis</a> last year, Léo Grinsztajn, Edouard Oyallon, Gaël Varoquaux have shown that, overall, tree-based models (random forests and XGBoost) outperform deep learning methods for tabular data on medium-sized datasets (10k training examples). However, the gap between tree-based models and deep learning becomes narrower as the dataset size increases (here: 10k -&gt; 50k).</p>
+<p>Here, I extend these lines of investigation, by comparing fast ai’s deep learning framework with XGBoost as well as other scikit-learn classifiers on a relatively large dataset of network traffic data. Given the large size of the used datasets in this project, I expect fast.ai to achieve comparable results to the other algorithms.</p>
+<h3 id="dataset">Dataset</h3>
+<p>I use the open source CSE-CIC-IDS2018 dataset, a contemporary network intrusion dataset produced and released in 2018(1).</p>
+<p>Further details about the datasets, including the experiments and testbeds utilized for dataset generation, can be found following this <a href="https://www.unb.ca/cic/datasets/ids-2018.html">Link</a>. The datasets comprise both benign (normal) network traffic and malicious traffic resulting from various network attacks, briefly outlined below. Table 1 provides an overview of the number of samples and network traffic types in each dataset.</p>
+<p><strong>Table 1: Number of samples and network traffic types in each dataset</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">File Name</th>
+<th align="center">Traffic Type</th>
+<th align="right"># Samples</th>
+<th align="right"># Dropped</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">02-14-2018.csv</td>
+<td align="center">Benign</td>
+<td align="right">663,808</td>
+<td align="right">3818</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">FTP-BruteForce</td>
+<td align="right">193,354</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">SSH-Bruteforce</td>
+<td align="right">187,589</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+<td align="center">&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+</tr>
+<tr>
+<td align="left">02-15-2018.csv</td>
+<td align="center">Benign</td>
+<td align="right">988,050</td>
+<td align="right">8027</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">DOS-GoldenEye</td>
+<td align="right">41,508</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">DOS-Slowloris</td>
+<td align="right">10,990</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+<td align="center">&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+</tr>
+<tr>
+<td align="left">02-16-2018.csv</td>
+<td align="center">Benign</td>
+<td align="right">446,772</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">Dos-SlowHTTPTest</td>
+<td align="right">139,890</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">DoS-Hulk</td>
+<td align="right">461,912</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+<td align="center">&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+</tr>
+<tr>
+<td align="left">02-22-2018.csv</td>
+<td align="center">Benign</td>
+<td align="right">1,042,603</td>
+<td align="right">5610</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">BruteForce-Web</td>
+<td align="right">249</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">BruteForce-XSS</td>
+<td align="right">79</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">SQL-Injection</td>
+<td align="right">34</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+<td align="center">&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+</tr>
+<tr>
+<td align="left">02-23-2018.csv</td>
+<td align="center">Benign</td>
+<td align="right">1,042,301</td>
+<td align="right">5708</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">BruteForce-Web</td>
+<td align="right">362</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">BruteForce-XSS</td>
+<td align="right">151</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">SQL-Injection</td>
+<td align="right">53</td>
+<td align="right">0</td>
+</tr>
+<tr>
+<td align="left">&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+<td align="center">&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+</tr>
+<tr>
+<td align="left">03-01-2018.csv</td>
+<td align="center">Benign</td>
+<td align="right">235,778</td>
+<td align="right">2259</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">Infiltration</td>
+<td align="right">92,403</td>
+<td align="right">660</td>
+</tr>
+<tr>
+<td align="left">&mdash;&mdash;&mdash;&mdash;&ndash;</td>
+<td align="center">&mdash;&mdash;&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+<td align="right">&mdash;&mdash;&mdash;</td>
+</tr>
+<tr>
+<td align="left">03-02-2018.csv</td>
+<td align="center">Benign</td>
+<td align="right">758,334</td>
+<td align="right">4050</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center">BotAttack</td>
+<td align="right">286,191</td>
+<td align="right">0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-cleaning">Data cleaning</h3>
+<p>Extensive data cleaning and feature engineering were needed to process the data for the over 6 million entries in this dataset. Following the same approach as Basnet and colleagues, after downloading the dataset, I conducted an analysis of its characteristics and performed necessary cleaning procedures. The dataset comprises original traffic stored in pcap files, logs, as well as preprocessed, labeled, and feature-selected CSV files. My focus was on the labeled CSV files, encompassing a total of 80 traffic features extracted using the CICFlowMeter. This dataset encompasses both normal (benign) and attack traffic, featuring various common attack types outlined in the preceding section, distributed across seven CSV files.</p>
+<p>To streamline my experiments and due to an abundance of available samples, I decided to simplify by discarding instances with Infinity, NaN, or missing values. Additionally, I converted timestamps to Unix epoch numeric values and addressed issues such as parsing and removing repeated column headers in certain data files. Approximately 20,000 samples were eliminated during the data cleanup process. Table 1 provides a summary of the datasets utilized in the experiments post the data cleanup step. The &ldquo;Number of Samples Remaining&rdquo; column denotes the total samples retained after the removal of instances from each category, as outlined in the last column. Each dataset contains a specific number of traffic samples belonging to benign and one or more attack types, repeated across multiple datasets, as summarized in Tables 1 and 2.</p>
+<p><strong>Table 2: Total number of traffic data samples for each type among all the datasets</strong></p>
+<table>
+<thead>
+<tr>
+<th>Traffic Type</th>
+<th align="right"># Samples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Benign</td>
+<td align="right">5,177,646</td>
+</tr>
+<tr>
+<td>FTP-BruteForce</td>
+<td align="right">193,354</td>
+</tr>
+<tr>
+<td>SSH-BruteForce</td>
+<td align="right">187,589</td>
+</tr>
+<tr>
+<td>DOS-GoldenEye</td>
+<td align="right">41,508</td>
+</tr>
+<tr>
+<td>Dos-Slowloris</td>
+<td align="right">10,990</td>
+</tr>
+<tr>
+<td>Dos-SlowHTTPTest</td>
+<td align="right">139,890</td>
+</tr>
+<tr>
+<td>Dos-Hulk</td>
+<td align="right">461,912</td>
+</tr>
+<tr>
+<td>BruteForce-Web</td>
+<td align="right">611</td>
+</tr>
+<tr>
+<td>BruteForce-XSS</td>
+<td align="right">230</td>
+</tr>
+<tr>
+<td>SQL-Injection</td>
+<td align="right">87</td>
+</tr>
+<tr>
+<td>Infiltration</td>
+<td align="right">92,403</td>
+</tr>
+<tr>
+<td>BotAttack</td>
+<td align="right">286,191</td>
+</tr>
+<tr>
+<td>Total Attack</td>
+<td align="right">1,414,765</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tabular-learning-with-fastai">Tabular learning with fast.ai</h3>
+<p>Here, I am providing a walk-through using one of the seven datasets (&ldquo;03-02-2018.csv&rdquo;) available in the CSE-CIC-IDS2018 dataset. An overview of the overall results including all datasets is available in the <a href="https://github.com/FUenal/deep-learning-cybersecurity-ids/tree/main">Github Repo</a>. First, I start by using the fast.ai deep learning framework.
+The tabular feature in fast.ai consolidates training, validation, and, if desired, testing data into a unified TabularPandas object. This arrangement allows for refining pre-processing steps on the training data, subsequently applying them consistently to the validation and test data. As a result, with fast.ai, the tasks of normalizing, handling missing values, and identifying categories for each categorical variable are predominantly automated. Furthermore, as demonstrated later on, this processed data can be employed to train models from alternative libraries.</p>
+<p>The first code chunk below, takes in the cleaned data, pre-processes it, build dataloaders and a learner, learns from the data, fits the model, and finally tests the predictions on the test dataset</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Pre-process data</span>
+
+<span style="color:#f92672">from</span> fastai.tabular.all <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+
+path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;/content/sample_data/results.csv&#39;</span> <span style="color:#75715e"># use your path</span>
+
+dls <span style="color:#f92672">=</span> TabularDataLoaders<span style="color:#f92672">.</span>from_csv(<span style="color:#e6db74">&#39;results.csv&#39;</span>, path<span style="color:#f92672">=</span>path, y_names<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Label&#34;</span>,
+    cat_names <span style="color:#f92672">=</span> cat_names,
+    cont_names <span style="color:#f92672">=</span> cont_names,
+    procs <span style="color:#f92672">=</span> [Categorify, FillMissing, Normalize])
+    
+<span style="color:#75715e"># Split data into training and validation sets</span>
+splits <span style="color:#f92672">=</span> RandomSplitter(valid_pct<span style="color:#f92672">=</span><span style="color:#ae81ff">0.2</span>)(range_of(data_cleaned))
+
+<span style="color:#75715e"># Create tabularpandas</span>
+to <span style="color:#f92672">=</span> TabularPandas(data_cleaned, procs<span style="color:#f92672">=</span>[Categorify, FillMissing,Normalize],
+                   cat_names <span style="color:#f92672">=</span> cat_names,
+                   cont_names <span style="color:#f92672">=</span> cont_names,
+                   y_names<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Label&#39;</span>,
+                   splits<span style="color:#f92672">=</span>splits)
+                   
+<span style="color:#75715e"># Build dataloaders</span>
+dls <span style="color:#f92672">=</span> to<span style="color:#f92672">.</span>dataloaders(bs<span style="color:#f92672">=</span><span style="color:#ae81ff">256</span>)
+
+<span style="color:#75715e"># Define learner</span>
+learn <span style="color:#f92672">=</span> tabular_learner(dls, metrics<span style="color:#f92672">=</span>accuracy, layers<span style="color:#f92672">=</span>[<span style="color:#ae81ff">200</span>,<span style="color:#ae81ff">100</span>])
+
+<span style="color:#75715e"># Fit model</span>
+learn<span style="color:#f92672">.</span>fit_one_cycle(<span style="color:#ae81ff">3</span>)
+
+
+<span style="color:#75715e"># Determine best learning rate. The lr_find() function in fast.ai allows one to see the loss that different learning rates would cause. </span>
+learn<span style="color:#f92672">.</span>lr_find()
+
+<span style="color:#75715e"># Generate test set</span>
+test_df <span style="color:#f92672">=</span> data_cleaned<span style="color:#f92672">.</span>copy()
+test_df<span style="color:#f92672">.</span>drop([<span style="color:#e6db74">&#39;Label&#39;</span>], axis<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, inplace<span style="color:#f92672">=</span>True)
+dl <span style="color:#f92672">=</span> learn<span style="color:#f92672">.</span>dls<span style="color:#f92672">.</span>test_dl(test_df)
+
+<span style="color:#75715e"># Get preditction on test set</span>
+learn<span style="color:#f92672">.</span>get_preds(dl<span style="color:#f92672">=</span>dl)
+
+<span style="color:#75715e"># load dataloaders on testset</span>
+dls <span style="color:#f92672">=</span> to<span style="color:#f92672">.</span>dataloaders()
+
+<span style="color:#75715e"># Build learner</span>
+learn <span style="color:#f92672">=</span> tabular_learner(dls, layers<span style="color:#f92672">=</span>[<span style="color:#ae81ff">200</span>,<span style="color:#ae81ff">100</span>], metrics<span style="color:#f92672">=</span>accuracy)
+
+<span style="color:#75715e"># Fit model on testset</span>
+learn<span style="color:#f92672">.</span>fit(<span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">1e-2</span>)
+
+<span style="color:#75715e"># Now we&#39;ll grab predictions</span>
+nn_preds <span style="color:#f92672">=</span> learn<span style="color:#f92672">.</span>get_preds()[<span style="color:#ae81ff">0</span>]
+nn_preds
+
+</code></pre></div><p>Let&rsquo;s take a look at the confusion matrix.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#75715e"># Confusion matrix</span>
+interp <span style="color:#f92672">=</span> ClassificationInterpretation<span style="color:#f92672">.</span>from_learner(learn)
+interp<span style="color:#f92672">.</span>plot_confusion_matrix(figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">12</span>,<span style="color:#ae81ff">12</span>), dpi<span style="color:#f92672">=</span><span style="color:#ae81ff">60</span>)
+
+</code></pre></div><p><img src="images/portfolio/result16022018_cm.png" alt="confusion_matrix"></p>
+<h3 id="xgboost-and-other-models">XGBoost and other models</h3>
+<p>In the second step, we take the data which we pre-processed using fast.ai and feed it into scikit-learn and train different models to compare the accuracy of the fast.ai deep learning framework with other machine learning algorithms.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Compare Algorithms</span>
+<span style="color:#f92672">import</span> pandas
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt
+<span style="color:#f92672">from</span> sklearn <span style="color:#f92672">import</span> model_selection
+<span style="color:#f92672">from</span> sklearn.linear_model <span style="color:#f92672">import</span> LogisticRegression
+<span style="color:#f92672">from</span> sklearn.neighbors <span style="color:#f92672">import</span> KNeighborsClassifier
+<span style="color:#f92672">from</span> sklearn.discriminant_analysis <span style="color:#f92672">import</span> LinearDiscriminantAnalysis
+<span style="color:#f92672">from</span> sklearn.naive_bayes <span style="color:#f92672">import</span> GaussianNB
+<span style="color:#f92672">from</span> sklearn.naive_bayes <span style="color:#f92672">import</span> BernoulliNB
+<span style="color:#f92672">from</span> sklearn.tree <span style="color:#f92672">import</span> DecisionTreeClassifier
+<span style="color:#f92672">from</span> sklearn.ensemble <span style="color:#f92672">import</span> RandomForestClassifier
+<span style="color:#f92672">from</span> xgboost <span style="color:#f92672">import</span> XGBClassifier
+
+<span style="color:#75715e"># load dataset</span>
+X, y <span style="color:#f92672">=</span> to<span style="color:#f92672">.</span>train<span style="color:#f92672">.</span>xs, to<span style="color:#f92672">.</span>train<span style="color:#f92672">.</span>ys<span style="color:#f92672">.</span>values<span style="color:#f92672">.</span>ravel()
+
+<span style="color:#75715e"># prepare configuration for cross validation test harness</span>
+seed <span style="color:#f92672">=</span> <span style="color:#ae81ff">7</span>
+<span style="color:#75715e"># prepare models</span>
+models <span style="color:#f92672">=</span> []
+models<span style="color:#f92672">.</span>append((<span style="color:#e6db74">&#39;LR&#39;</span>, LogisticRegression(solver<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;lbfgs&#39;</span>, multi_class<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;ovr&#39;</span>, max_iter<span style="color:#f92672">=</span><span style="color:#ae81ff">500</span>)))
+models<span style="color:#f92672">.</span>append((<span style="color:#e6db74">&#39;LDA&#39;</span>, LinearDiscriminantAnalysis()))
+models<span style="color:#f92672">.</span>append((<span style="color:#e6db74">&#39;KNN&#39;</span>, KNeighborsClassifier()))
+models<span style="color:#f92672">.</span>append((<span style="color:#e6db74">&#39;CART&#39;</span>, DecisionTreeClassifier()))
+models<span style="color:#f92672">.</span>append((<span style="color:#e6db74">&#39;GaussianNB&#39;</span>, GaussianNB()))
+models<span style="color:#f92672">.</span>append((<span style="color:#e6db74">&#39;BernoulliNB&#39;</span>, BernoulliNB()))
+models<span style="color:#f92672">.</span>append((<span style="color:#e6db74">&#39;RF&#39;</span>, RandomForestClassifier()))
+models<span style="color:#f92672">.</span>append((<span style="color:#e6db74">&#39;XGB&#39;</span>, XGBClassifier(objective <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;multi:softmax&#39;</span>, booster <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;gbtree&#39;</span>, 
+                     nrounds <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;min.error.idx&#39;</span>, num_class <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, 
+                     maximize <span style="color:#f92672">=</span> False, eval_metric <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;logloss&#39;</span>, eta <span style="color:#f92672">=</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">1</span>,
+                     max_depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">14</span>, colsample_bytree <span style="color:#f92672">=</span> <span style="color:#f92672">.</span><span style="color:#ae81ff">4</span>, n_jobs<span style="color:#f92672">=-</span><span style="color:#ae81ff">1</span>)))
+
+<span style="color:#75715e"># evaluate each model in turn</span>
+results <span style="color:#f92672">=</span> []
+names <span style="color:#f92672">=</span> []
+scoring <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;accuracy&#39;</span>
+<span style="color:#66d9ef">for</span> name, model <span style="color:#f92672">in</span> models:
+	kfold <span style="color:#f92672">=</span> model_selection<span style="color:#f92672">.</span>KFold(n_splits<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>)
+	cv_results <span style="color:#f92672">=</span> model_selection<span style="color:#f92672">.</span>cross_val_score(model, X, y, cv<span style="color:#f92672">=</span>kfold, scoring<span style="color:#f92672">=</span>scoring)
+	results<span style="color:#f92672">.</span>append(cv_results)
+	names<span style="color:#f92672">.</span>append(name)
+	msg <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">%s</span><span style="color:#e6db74">: </span><span style="color:#e6db74">%f</span><span style="color:#e6db74"> (</span><span style="color:#e6db74">%f</span><span style="color:#e6db74">)&#34;</span> <span style="color:#f92672">%</span> (name, cv_results<span style="color:#f92672">.</span>mean()<span style="color:#f92672">*</span><span style="color:#ae81ff">100</span>, cv_results<span style="color:#f92672">.</span>std()<span style="color:#f92672">*</span><span style="color:#ae81ff">100</span>)
+	<span style="color:#66d9ef">print</span>(msg)
+	
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Create results dataframe</span>
+result02032018 <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>DataFrame(columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>])
+
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;Logistic Regression&#39;</span>, <span style="color:#ae81ff">97.04</span>, <span style="color:#ae81ff">1.55</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;LinearDiscriminantAnalysis&#39;</span>, <span style="color:#ae81ff">94.41</span>, <span style="color:#ae81ff">0.08</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;KNN&#39;</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">0.00</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;DecisionTreeClassifier&#39;</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">0.00</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;GaussianNB&#39;</span>, <span style="color:#ae81ff">83.98</span>, <span style="color:#ae81ff">0.13</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;BernoulliNB&#39;</span>, <span style="color:#ae81ff">94.11</span>, <span style="color:#ae81ff">0.08</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;RandomForestClassifier&#39;</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">0.00</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;XGBClassifier&#39;</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">0.00</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>append(pd<span style="color:#f92672">.</span>DataFrame([[<span style="color:#e6db74">&#39;fast.ai&#39;</span>, <span style="color:#ae81ff">99.99</span>, <span style="color:#ae81ff">0.00</span>]], columns<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;Classifier&#34;</span>, <span style="color:#e6db74">&#34;Accuracy&#34;</span>, <span style="color:#e6db74">&#34;Standard Deviation&#34;</span>]))
+
+result02032018 <span style="color:#f92672">=</span> result02032018<span style="color:#f92672">.</span>sort_values(<span style="color:#e6db74">&#39;Accuracy&#39;</span>, ascending<span style="color:#f92672">=</span>True)
+
+<span style="color:#75715e"># Plot algorithm comparison</span>
+fig, ax <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>subplots(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">1</span>, figsize<span style="color:#f92672">=</span>(<span style="color:#ae81ff">6</span>,<span style="color:#ae81ff">5</span>))
+
+bars <span style="color:#f92672">=</span> ax<span style="color:#f92672">.</span>barh(result02032018[<span style="color:#e6db74">&#39;Classifier&#39;</span>], result02032018[<span style="color:#e6db74">&#39;Accuracy&#39;</span>], color<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;b&#34;</span>)
+ax<span style="color:#f92672">.</span>bar_label(bars)
+ax<span style="color:#f92672">.</span>tick_params(axis<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;y&#34;</span>, labelsize<span style="color:#f92672">=</span><span style="color:#ae81ff">14</span>)
+ax<span style="color:#f92672">.</span>set_xlabel(<span style="color:#e6db74">&#39;Accuracy %&#39;</span>, fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">14</span>)
+ax<span style="color:#f92672">.</span>set_title(<span style="color:#e6db74">&#39;Classifier Accuracy&#39;</span>, fontsize<span style="color:#f92672">=</span><span style="color:#ae81ff">20</span>);
+</code></pre></div><p><img src="images/portfolio/result02032018_plt.png" alt="plot"></p>
+<h3 id="results">Results</h3>
+<p>For the dataset that I present here (&ldquo;03-02-2018.csv&rdquo;), as well as the majority of datasets available, fast.ai is on par with XGBoost and RandomForestClassifier. All of the models have been trained using default measures, so using parameter fine-tuning might still improve the results. However, given the almost perfect accuracy score, fine-tuning seemed a little too much. Overall, except for one dataset (&ldquo;03-01-2018.csv&rdquo;), fast.ai achieved high accuracy scores and could compete with the more battle-tested ML approaches, which have been the go to tools when it comes to tabular data. All frameworks fare well, irrespective of severe class-imbalance in some of the datasets.</p>
+<h4 id="project-requirements">Project Requirements</h4>
+<p>✅ Python</p>
+<p>✅ Pandas</p>
+<p>✅ Numpy</p>
+<p>✅ Matplotlib</p>
+<p>✅ fast.ai</p>
+<p>✅ scikit-learn</p>
+<p>✅ xgboost</p>
+<p>1- A. L. I. Sharafaldin and A. Ghorbani. Toward generating a new intrusion detection dataset and intrusion traffic characterization. In Proc. of the 4th International Conference on Information Systems Security and Privacy (ICISSP’18), Funchal, Madeira, Portugal, pages 108–116. ICISSP, January 2018.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section section-on-footer" data-background="/images/backgrounds/bg-dots.png">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-title">Contact Fatih</h2>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <div class="bg-white rounded text-center p-5 shadow-down">
+          
+            <h4>Fatih Uenal</h4>
+            <div class="shadow-down mb-4">
+              <img src="/images/about/user-picture-3.jpg" alt="author"
+                class="img-fluid w-50 rounded-lg border-thick border-white">
+            </div>
+          
+            <h4>Email</h4>
+            <p>uenal.fatih@proton.me</p>
+          
+          
+          
+            <a class="btn btn-primary" href='mailto:uenal.fatih@proton.me'>
+                <i class="ti-email"></i>
+                Contact Fatih
+            </a>
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<footer class="bg-dark footer-section">
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5 class="text-light">Email</h5>
+          <p class="text-white paragraph-lg font-secondary"><a href="mailto:mars.fatih@gmail.com">mars.fatih@gmail.com</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Phone</h5>
+          <p class="text-white paragraph-lg font-secondary"><a href="tel:--">--</a></p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="text-light">Address</h5>
+          <p class="text-white paragraph-lg font-secondary">Campus Biotech, Chemin des Mines 9, 1202 Genève</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom border-top text-center border-dark py-5">
+    <p class="mb-0 text-light">Copyright © 2023 Fatih Uenal</p>
+    <p class="mb-0 text-white font-weight-light">Site built with  <a href="https://business-science.github.io/portfoliodown/" target="_blank">portfoliodown</a>.</p>
+  </div>
+  
+</footer>
+
+
+<!-- Google Map API -->
+
+
+<!-- JS Plugins -->
+
+<script src="/plugins/jQuery/jquery.min.js"></script>
+
+<script src="/plugins/bootstrap/bootstrap.min.js"></script>
+
+<script src="/plugins/slick/slick.min.js"></script>
+
+<script src="/plugins/shuffle/shuffle.min.js"></script>
+
+<script src="/plugins/google-map/map.js"></script>
+
+
+<!-- Main Script -->
+
+<script src="/js/script.min.js"></script>
+
+
+
+</body>
+
+</html>

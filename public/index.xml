@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fatih Uenal</title>
+    <title>Cybersec Data Science</title>
     <link>/</link>
-    <description>Recent content on Fatih Uenal</description>
+    <description>Recent content on Cybersec Data Science</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Dec 2023 12:14:34 +0600</lastBuildDate>
+    <lastBuildDate>Thu, 21 Dec 2023 12:14:34 +0600</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Deep learning vs. XGBoost on network traffic data</title>
+      <link>/portfolio/project-9/</link>
+      <pubDate>Thu, 21 Dec 2023 12:14:34 +0600</pubDate>
+      
+      <guid>/portfolio/project-9/</guid>
+      <description>Project Details I use the fast.ai deep learning framework for one of its newest applications: classification on tabular data.</description>
+    </item>
     
     <item>
       <title>Azure Honeynet - Simulating Real-World Cyber Attacks</title>
