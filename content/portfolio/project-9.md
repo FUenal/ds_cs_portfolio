@@ -172,6 +172,8 @@ interp.plot_confusion_matrix(figsize=(12,12), dpi=60)
 
 ![confusion_matrix](/images/portfolio/result02032018_cm.png)
 
+The confusion matrix shows extremely low false positive and false negative scores indicating good recall and precision.
+
 ### XGBoost and other models
 
 In the second step, we take the data which we pre-processed using fast.ai and feed it into scikit-learn and train different models to compare the accuracy of the fast.ai deep learning framework with other machine learning algorithms.
