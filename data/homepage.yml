@@ -26,7 +26,7 @@ about:
   content : 
     <p class="lead">
     <strong> I love using Data Science and AI to solve complex business problems.</strong> My passion is Cyber Security and I am bringing the best of deep learning and machine learning into the exciting field of Cyber Security Analysis.  
-    When I am not data sciencing or hunting cyber threats with alogorithms, I enjoy hiking, yoga, and sci-fi. 
+    When I am not data sciencing or hunting cyber threats with algorithms, I enjoy hiking, yoga, rowing, and sci-fi. 
     </p>
     <p class="lead">
     <strong>My area of focus</strong> is applying data science to cyber security issues like malware detection and network analysis. 
@@ -54,37 +54,53 @@ portfolio:
 experience:
   enable : true
   title : "Experience"
-  description: "<p class='lead'>Over 3+ years of experience working with Universities, NGOs, and companies from all over the world. I design & develop data science products to help increase efficiency and improve customer experience.</p>"
+  description: "<p class='lead'>Over 6+ years of experience working with Universities, NGOs, and companies from all over the world. I design & develop data science products to help increase efficiency and improve customer experience.</p>"
   button:
     icon: "ti-linkedin"
     btnText: "Linkedin"
-    URL: "https://www.linkedin.com/in/fuenal/"
+    URL: "https://www.linkedin.com/in/fatih-uenal/"
   button2:
     icon: "ti-file"
     btnText: "Download My Resume"
     URL: "/cv/resume_FUenal.pdf"
-  
+
   item: 
+  
+    - logo : "images/experience/icon-2.png"
+      title : "Cyber Security Analyst"
+      company : "SBB"
+      duration : "April 2024 - Present"
+      
     - logo : "images/experience/icon-2.png"
       title : "Cybersecurity Support Analyst"
       company : "Log(N) Pacific"
-      duration : "Oct 2023 - Present"
+      duration : "Oct 2023 - Feb 2024"
       
     - logo : "images/experience/icon-1.png"
       title : "Behavioral Data Scientist"
       company : "University of Geneva"
-      duration : "Oct 2021 - Present"
+      duration : "Oct 2021 - Dec 2023"
       
     - logo : "images/experience/icon-2.png"
       title : "Data Scientist"
       company : "Fossil Fuel Non-Proliferation Treaty Initiative"
       duration : "Feb 2021 - Oct 2023"
       
+    - logo : "images/experience/icon-2.png"
+      title : "Data Science Fellow"
+      company : "Faculty.ai"
+      duration : "Jan 2021 - Mar 2021"
+      
     - logo : "images/experience/icon-1.png"
-      title : "Data Scientist"
+      title : "Data Scientist / Researcher"
       company : "University of Cambridge"
       duration : "Sep 2019 - Sep 2021"
 
+    - logo : "images/experience/icon-1.png"
+      title : "Data Analyst / Researcher"
+      company : "Harvard University"
+      duration : "Aug 2016 - Aug 2018"
+      
 # education
 education:
   enable : true
@@ -121,11 +137,11 @@ skill:
   title : "Skills"
   item:
     - title : "Microsoft Azure"
-      progress : "90%"
+      progress : "80%"
       color : "#fdb157"
       
     - title : "Azure Sentinel"
-      progress : "80%"
+      progress : "70%"
       color : "#9473e6"
       
     - title : "KQL"
@@ -133,7 +149,7 @@ skill:
       color : "#ffbcaa"
       
     - title : "Wireshark"
-      progress : "90%"
+      progress : "70%"
       color : "#fdb157"
       
     - title : "Python"
@@ -182,18 +198,28 @@ testimonial:
     - name : "Maria Diaz, PhD"
       image : "images/testimonial/maria.jpg"
       designation : "Head of Fellowship @ Faculty | AI"
-      content : "<p class='lead text-white'><em>In less than 2 months after starting his Faculty AI Data Science Fellowship, Fatih had transitioned into a role as a data scientist with the Fossil Fuel Non-Proliferation Treaty Initiative!</em></p>"
+      content : "<p class='lead text-white'><em>Fatih is an incredible person to work with. He has extensive knowledge in the data science and ML space. Apart from his technical skills, he is commercially savvy and able to work with clients. I would highly recommend Fatih to anyone looking for the 'best'. </em></p>"
       
-    - name : "Prof. Peter Newell"
-      image : "images/testimonial/Peter.jpg"
-      designation : "Professor of International Relations, University of Sussex"
-      content : "<p class='lead text-white'><em>Because of all the data science and AI skills Fatih has provided, we have brought our database to life and can share it with people all around the world. Setting up shiny dashboards on Digital Ocean was extremely helpful providing access to our database.</em></p>"
+    - name : "Prof. Tobias Brosch"
+      image : "images/testimonial/tobias_brosch.jpg"
+      designation : "Professor in Psychology of Sustainable Development, University of Geneva"
+      content : "<p class='lead text-white'><em>It was a pleasure working with Fatih! I was highly impressed by his extensive knowledge and expertise in data analysis, machine learning, and data visualization. He managed the project tasks and the team efficiently, and was great in handling interactions with the project stakeholders. I strongly recommend him to anyone looking for a smart, friendly, and engaged person with serious data handling chops!</em></p>"
+    
+    - name : "Alex Rafalowicz"
+      image : "images/testimonial/alex_rafalowicz.jpg"
+      designation : "Director @ Fossil Fuel Non-Proliferation Treaty"
+      content : "<p class='lead text-white'><em>DuringThank you for your excellent work, Fatih. Great to see Fossil Fuel Non-Proliferation Tracker come to life via your creativity and ingenuity. </em></p>"  
+    
+    - name : "Frederick Daley"
+      image : "images/testimonial/frederick_daley.jpg"
+      designation : "Research Associate at the Centre for Global Political Economy, University of Sussex"
+      content : "<p class='lead text-white'><em>Because of all the rigourous data science and AI skills Fatih has provided, we have brought our database to life and can share it with people all around the world. Setting up shiny dashboards on the cloud was extremely helpful providing access to our database.</em></p>"
+          
+    - name : "Prof Jim Sidanius"
+      image : "images/testimonial/jim_sidanius.jpg"
+      designation : "Professor of Psychology, Harvard University"
+      content : "<p class='lead text-white'><em>During his two years as a postdoctoral researcher in my lab at Harvard University, Fatih has demonstrated a highly detail oriented, and analytical mindset with in-depth statistical analysis skills. </em></p>"
         
-    - name : "Prof. Sander van der Linden"
-      image : "images/testimonial/sander.jpg"
-      designation : "Professor of Social Psychology, University of Cambridge"
-      content : "<p class='lead text-white'><em>Thanks to Fatih's skills in machine learning, we were able to analyze our big data sets and gain valuable insights into Europeans' energy preferences.</em></p>"
-      
 # client logo slider
 clients_logo_slider:
   enable : true
