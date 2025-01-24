@@ -2,7 +2,7 @@
 categories:
 - cybersecurity
 - data science
-date: "2023-12-21T12:14:34+06:00"
+date: "2025-03-21T12:14:34+06:00"
 description: Juyper Notebook.
 draft: false
 github_url: '[Open Github](https://github.com/FUenal/deep-learning-cybersecurity-ids/tree/main)'
